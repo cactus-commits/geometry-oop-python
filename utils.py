@@ -1,20 +1,32 @@
 """
-Function for validating that value is a number.
+Functions for validation.
 
 """
 
-def validate_number(value, name):
+def validate_number(value: float, name: str) -> float:
+    """
+    Validate that value is a number.
+
+    Parameters:
+    - value: The value that needs to be validated
+    - name (str): Name of the parameter
+    
+    """
     if not isinstance(value,(int, float)):
         raise TypeError(f"{name} must be a number, not {type(value)}")
     return float(value)
 
 
-"""
-Function for validating that a value is a positive number.
+def validate_positive_number(value: float, name: str) -> float:
+    """
+    Validate that a value is a positive number.
 
-"""
+    Parameters:
+    - value: The value that needs to be validated
+    - name (str): Name of the parameter
 
-def validate_positive_number(value, name):
+    """
+    
     if not isinstance(value, (int, float)):
         raise TypeError(f"{name} must be anumber, not {type(value)}")
     if value <= 0:
