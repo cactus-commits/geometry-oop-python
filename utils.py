@@ -26,9 +26,17 @@ def validate_positive_number(value: float, name: str) -> float:
     - name (str): Name of the parameter
 
     """
-    
+
     if not isinstance(value, (int, float)):
         raise TypeError(f"{name} must be anumber, not {type(value)}")
     if value <= 0:
         raise ValueError(f"{name} must be positive")
     return float(value)
+
+def validate_shape_comparison(other, all_shape):
+    """
+    Validate that the provided shape is valid for comparison
+
+    """
+    if not isinstance(other, all_shape):
+        raise TypeError(f"Can't compare shapes with {type(other)}")

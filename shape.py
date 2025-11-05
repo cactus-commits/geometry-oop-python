@@ -65,24 +65,4 @@ class Shape:
         self._x += dx
         self._y += dy
 
-    def __eq__(self, other: object) -> bool:
-        """Check if two shapes are equal (have the same area)"""
-        if not isinstance(other, Shape):
-            return False
-        return self.area == other.area
-
-    def __lt__(self, other):
-        """Check if this shapes area is smaller than another"""
-        return self.area < other.area
     
-    def __le__(self, other):
-        """Check if this shape is smaller than or equal to another"""
-        return self.area <= other.area
-    
-    def __gt__(self, other):
-        """Check if this shape is larger than another"""
-        return self.area > other.area
-    
-    def __ge__(self, other):
-        """Check if this shape is larger than or equal to another"""
-        return self.area >= other.area
