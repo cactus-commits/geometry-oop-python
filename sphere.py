@@ -21,8 +21,8 @@ class Sphere(Shape3D):
     - is_unit_sphere(): Check if the sphere is a unit circle (radius=1 and center of origin (0,0,0))
 
     Example usage:
-    >>> sphere = Sphere(x=0, y=0, z=0 radius=5)
-    >>> sphere.surface_area
+    >>> sphere = Sphere(x=0, y=0, z=0, radius=5)
+    >>> sphere.volume
     523.5987755982989
     >>> sphere.is_unit_sphere()
     False
