@@ -21,6 +21,8 @@ class AllShape:
         - 3D shapes: return volume
         
         """
+        raise NotImplementedError(f"Comparison_metric must be implemented in child class")
+    
     def __eq__(self, other: object) -> bool:
         """ Check if two shapes are equal (have the same comparison metric) -> bool """
         if not isinstance(other, AllShape):

@@ -15,7 +15,7 @@ class Shape(AllShape):
 
     Methods:
     - translate(dx, dy): Move the shape by dx and dy
-    - comparison_metric(self): Returns the metric used for comparing shapes
+    - comparison_metric(self): Returns the metric used for comparing shapes (inherits from AllShape)
     
     """
 
