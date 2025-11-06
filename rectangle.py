@@ -71,7 +71,7 @@ class Rectangle(Shape):
     
     @property
     def perimeter(self):
-        # Calculate the perimeter: 2 * (width + height)
+        """Calculate the perimeter: 2 * (width + height)"""
         return 2 * (self.width + self.height)
     
     def is_square(self):
