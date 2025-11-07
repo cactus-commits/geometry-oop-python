@@ -16,6 +16,7 @@ class Shape2DPlotter:
         """Initialize the plotter figure and axes"""
         self.shapes = [] # List of shapes
         self.fig, self.ax = plt.subplots()
+        self.ax.set_aspect('equal')  # Make circles look circular instead of oval - got help from LLM to do this since all my circles were oval.
 
     def add_shape(self, shape):
         """
